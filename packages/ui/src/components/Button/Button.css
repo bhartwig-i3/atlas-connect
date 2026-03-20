@@ -5,12 +5,14 @@
   gap: var(--atlas-spacing-2);
   border: 1px solid transparent;
   border-radius: var(--atlas-border-radius-md);
-  font-family: inherit;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
   font-size: var(--atlas-font-size-md);
-  font-weight: 500;
+  letter-spacing: 1.12px;
+  text-transform: uppercase;
   line-height: 1;
   cursor: pointer;
-  transition: background-color 120ms ease, border-color 120ms ease, opacity 120ms ease;
+  transition: opacity 120ms ease, background-color 120ms ease, border-color 120ms ease;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -21,58 +23,72 @@
 }
 
 /* Sizes */
-.atlas-btn--sm {
-  padding: var(--atlas-spacing-2) var(--atlas-spacing-3);
-  font-size: var(--atlas-font-size-sm);
-}
-.atlas-btn--md {
-  padding: var(--atlas-spacing-2) var(--atlas-spacing-4);
-}
-.atlas-btn--lg {
-  padding: var(--atlas-spacing-3) var(--atlas-spacing-6);
-  font-size: var(--atlas-font-size-lg);
-}
+.atlas-btn--sm { height: 32px; padding: 4px 16px; }
+.atlas-btn--md { height: 40px; padding: 8px 16px; }
+.atlas-btn--lg { height: 48px; padding: 0 20px; }
 
-/* Variants */
-.atlas-btn--primary {
-  background: var(--atlas-background-brand);
-  color: var(--atlas-text-on-fill);
-  border-color: var(--atlas-background-brand);
-}
-.atlas-btn--primary:hover:not(:disabled) {
-  background: var(--atlas-background-brand-hover);
-  border-color: var(--atlas-background-brand-hover);
-}
+/* === Filled variants === */
 
-.atlas-btn--secondary {
-  background: transparent;
-  color: var(--atlas-text-brand);
+.atlas-btn--primary.atlas-btn--filled {
+  background: var(--atlas-surface-brand);
+  color: var(--atlas-text-onbrand);
+  border-color: var(--atlas-surface-brand);
+}
+.atlas-btn--primary.atlas-btn--filled:hover:not(:disabled) { opacity: 0.88; }
+
+.atlas-btn--secondary.atlas-btn--filled {
+  background: var(--atlas-surface-gray);
+  color: var(--atlas-text-inverse);
+}
+.atlas-btn--secondary.atlas-btn--filled:hover:not(:disabled) { opacity: 0.88; }
+
+.atlas-btn--destructive.atlas-btn--filled {
+  background: var(--atlas-surface-error);
+  color: var(--atlas-text-primary);
+}
+.atlas-btn--destructive.atlas-btn--filled:hover:not(:disabled) { opacity: 0.88; }
+
+.atlas-btn--success.atlas-btn--filled {
+  background: var(--atlas-surface-success);
+  color: var(--atlas-text-primary);
+}
+.atlas-btn--success.atlas-btn--filled:hover:not(:disabled) { opacity: 0.88; }
+
+/* === Outlined variants === */
+
+.atlas-btn--outlined { background: transparent; }
+
+.atlas-btn--primary.atlas-btn--outlined {
+  color: var(--atlas-text-primary);
   border-color: var(--atlas-border-brand);
 }
-.atlas-btn--secondary:hover:not(:disabled) {
-  background: var(--atlas-background-secondary);
+.atlas-btn--primary.atlas-btn--outlined:hover:not(:disabled) {
+  background: var(--atlas-surface-branddisabled);
 }
 
-.atlas-btn--ghost {
-  background: transparent;
+.atlas-btn--secondary.atlas-btn--outlined {
   color: var(--atlas-text-primary);
-  border-color: transparent;
+  border-color: var(--atlas-border-tertiary);
 }
-.atlas-btn--ghost:hover:not(:disabled) {
-  background: var(--atlas-background-secondary);
-}
-
-.atlas-btn--danger {
-  background: var(--atlas-background-danger);
-  color: var(--atlas-text-on-fill);
-  border-color: var(--atlas-background-danger);
-}
-.atlas-btn--danger:hover:not(:disabled) {
-  opacity: 0.88;
+.atlas-btn--secondary.atlas-btn--outlined:hover:not(:disabled) {
+  background: var(--atlas-surface-graydisabled);
 }
 
-/* Disabled */
-.atlas-btn:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
+.atlas-btn--destructive.atlas-btn--outlined {
+  color: var(--atlas-text-primary);
+  border-color: var(--atlas-border-error);
 }
+.atlas-btn--destructive.atlas-btn--outlined:hover:not(:disabled) {
+  background: var(--atlas-surface-errordisabled);
+}
+
+.atlas-btn--success.atlas-btn--outlined {
+  color: var(--atlas-text-primary);
+  border-color: var(--atlas-border-success);
+}
+.atlas-btn--success.atlas-btn--outlined:hover:not(:disabled) {
+  background: var(--atlas-surface-successdisabled);
+}
+
+/* === Disabled state === */
+.atlas-btn:disabled { opacity: 0.4; cursor: not-allowed; }

@@ -11,24 +11,32 @@ export default function Home() {
         minHeight: '100vh',
         gap: '24px',
         padding: '48px',
+        background: 'var(--atlas-background-primary)',
       }}
     >
       <h1
         style={{
-          fontSize: 'var(--atlas-font-size-4xl)',
+          fontFamily: 'var(--font-anybody), Anybody, sans-serif',
+          fontSize: 'var(--atlas-font-size-2xl)',
+          fontWeight: 500,
           color: 'var(--atlas-text-primary)',
-          fontWeight: 700,
         }}
       >
         Atlas Connect
       </h1>
-      <p style={{ color: 'var(--atlas-text-secondary)', fontSize: 'var(--atlas-font-size-lg)' }}>
+      <p
+        style={{
+          color: 'var(--atlas-text-secondary)',
+          fontSize: 'var(--atlas-font-size-lg)',
+          fontFamily: 'var(--font-manrope), Manrope, sans-serif',
+        }}
+      >
         Design system wired up and ready.
       </p>
       <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
-        <Button variant="primary">Get Started</Button>
-        <Button variant="secondary">Learn More</Button>
-        <Button variant="ghost">Dismiss</Button>
+        <Button variant="primary" buttonType="filled">Get Started</Button>
+        <Button variant="secondary" buttonType="filled">Learn More</Button>
+        <Button variant="primary" buttonType="outlined">Dismiss</Button>
       </div>
     </main>
   );
