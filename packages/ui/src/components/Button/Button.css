@@ -1,0 +1,78 @@
+.atlas-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--atlas-spacing-2);
+  border: 1px solid transparent;
+  border-radius: var(--atlas-border-radius-md);
+  font-family: inherit;
+  font-size: var(--atlas-font-size-md);
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 120ms ease, border-color 120ms ease, opacity 120ms ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.atlas-btn:focus-visible {
+  outline: 2px solid var(--atlas-border-brand);
+  outline-offset: 2px;
+}
+
+/* Sizes */
+.atlas-btn--sm {
+  padding: var(--atlas-spacing-2) var(--atlas-spacing-3);
+  font-size: var(--atlas-font-size-sm);
+}
+.atlas-btn--md {
+  padding: var(--atlas-spacing-2) var(--atlas-spacing-4);
+}
+.atlas-btn--lg {
+  padding: var(--atlas-spacing-3) var(--atlas-spacing-6);
+  font-size: var(--atlas-font-size-lg);
+}
+
+/* Variants */
+.atlas-btn--primary {
+  background: var(--atlas-background-brand);
+  color: var(--atlas-text-on-fill);
+  border-color: var(--atlas-background-brand);
+}
+.atlas-btn--primary:hover:not(:disabled) {
+  background: var(--atlas-background-brand-hover);
+  border-color: var(--atlas-background-brand-hover);
+}
+
+.atlas-btn--secondary {
+  background: transparent;
+  color: var(--atlas-text-brand);
+  border-color: var(--atlas-border-brand);
+}
+.atlas-btn--secondary:hover:not(:disabled) {
+  background: var(--atlas-background-secondary);
+}
+
+.atlas-btn--ghost {
+  background: transparent;
+  color: var(--atlas-text-primary);
+  border-color: transparent;
+}
+.atlas-btn--ghost:hover:not(:disabled) {
+  background: var(--atlas-background-secondary);
+}
+
+.atlas-btn--danger {
+  background: var(--atlas-background-danger);
+  color: var(--atlas-text-on-fill);
+  border-color: var(--atlas-background-danger);
+}
+.atlas-btn--danger:hover:not(:disabled) {
+  opacity: 0.88;
+}
+
+/* Disabled */
+.atlas-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

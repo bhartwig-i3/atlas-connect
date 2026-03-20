@@ -1,0 +1,30 @@
+{
+  "background": {
+    "primary":   { "value": "{color.neutral.90}",  "type": "color" },
+    "secondary": { "value": "{color.neutral.80}",  "type": "color" },
+    "brand":     { "value": "{color.brand.50}",    "type": "color" },
+    "brandHover":{ "value": "{color.brand.40}",    "type": "color" },
+    "danger":    { "value": "{color.danger.40}",   "type": "color" },
+    "success":   { "value": "{color.success.40}",  "type": "color" },
+    "warning":   { "value": "{color.warning.40}",  "type": "color" }
+  },
+  "text": {
+    "primary":   { "value": "{color.neutral.5}",   "type": "color" },
+    "secondary": { "value": "{color.neutral.30}",  "type": "color" },
+    "disabled":  { "value": "{color.neutral.50}",  "type": "color" },
+    "onFill":    { "value": "{color.neutral.0}",   "type": "color" },
+    "brand":     { "value": "{color.brand.30}",    "type": "color" },
+    "danger":    { "value": "{color.danger.40}",   "type": "color" }
+  },
+  "border": {
+    "default":   { "value": "{color.neutral.70}",  "type": "color" },
+    "strong":    { "value": "{color.neutral.60}",  "type": "color" },
+    "brand":     { "value": "{color.brand.50}",    "type": "color" },
+    "danger":    { "value": "{color.danger.40}",   "type": "color" }
+  },
+  "surface": {
+    "overlay":   { "value": "{color.neutral.80}",  "type": "color" },
+    "card":      { "value": "{color.neutral.80}",  "type": "color" },
+    "sidebar":   { "value": "{color.neutral.90}",  "type": "color" }
+  }
+}

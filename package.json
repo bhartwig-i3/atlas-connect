@@ -1,0 +1,14 @@
+{
+  "name": "atlas-connect",
+  "private": true,
+  "scripts": {
+    "build:tokens": "pnpm --filter @atlas/tokens build",
+    "build:ui": "pnpm --filter @atlas/ui build",
+    "storybook": "pnpm --filter @atlas/ui storybook",
+    "dev": "pnpm --filter portal dev"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
+}
