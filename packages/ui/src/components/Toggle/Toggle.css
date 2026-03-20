@@ -1,0 +1,70 @@
+.atlas-toggle-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.atlas-toggle-wrapper--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.atlas-toggle-control {
+  position: relative;
+  width: 40px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.atlas-toggle-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  cursor: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.atlas-toggle-track {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: var(--atlas-surface-secondary);
+  transition: background 150ms ease;
+  pointer-events: none;
+}
+
+.atlas-toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--atlas-text-primary);
+  transition: left 150ms ease, background 150ms ease;
+}
+
+.atlas-toggle-input:checked ~ .atlas-toggle-track {
+  background: var(--atlas-surface-brand);
+}
+
+.atlas-toggle-input:checked ~ .atlas-toggle-track .atlas-toggle-thumb {
+  left: 19px;
+  background: var(--atlas-text-onbrand);
+}
+
+.atlas-toggle-input:focus-visible ~ .atlas-toggle-track {
+  outline: 2px solid var(--atlas-border-brand);
+  outline-offset: 2px;
+}
+
+.atlas-toggle-label {
+  font-family: var(--font-manrope), Manrope, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--atlas-text-primary);
+}

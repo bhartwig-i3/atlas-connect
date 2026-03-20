@@ -4,6 +4,9 @@
     "secondary": { "value": "{color.neutral.80}", "type": "color" }
   },
   "surface": {
+    "primary":         { "value": "#2B2C30",                  "type": "color" },
+    "secondary":       { "value": "{color.neutral.70}",       "type": "color" },
+    "disabled":        { "value": "rgba(60, 65, 73, 0.5)",    "type": "color" },
     "brand":           { "value": "{color.brand.60}",         "type": "color" },
     "branddisabled":   { "value": "rgba(245, 163, 54, 0.2)",  "type": "color" },
     "gray":            { "value": "{color.neutral.70}",       "type": "color" },
@@ -19,15 +22,20 @@
   "text": {
     "primary":         { "value": "{color.neutral.20}",  "type": "color" },
     "secondary":       { "value": "{color.neutral.40}",  "type": "color" },
+    "tertiary":        { "value": "{color.neutral.50}",  "type": "color" },
     "disabled":        { "value": "{color.neutral.60}",  "type": "color" },
     "onbrand":         { "value": "{color.neutral.90}",  "type": "color" },
     "onbranddisabled": { "value": "{color.neutral.90}",  "type": "color" },
     "inverse":         { "value": "{color.neutral.90}",  "type": "color" },
     "brand":           { "value": "{color.brand.60}",    "type": "color" },
     "error":           { "value": "{color.error.40}",    "type": "color" },
-    "success":         { "value": "{color.success.40}",  "type": "color" }
+    "success":         { "value": "{color.success.40}",  "type": "color" },
+    "blue":            { "value": "{color.blue.40}",     "type": "color" },
+    "purple":          { "value": "{color.purple.40}",   "type": "color" },
+    "warning":         { "value": "{color.warning.40}",  "type": "color" }
   },
   "border": {
+    "primary":         { "value": "{color.neutral.70}",       "type": "color" },
     "default":         { "value": "{color.neutral.70}",       "type": "color" },
     "secondary":       { "value": "{color.neutral.60}",       "type": "color" },
     "tertiary":        { "value": "{color.neutral.50}",       "type": "color" },
@@ -37,7 +45,20 @@
     "error":           { "value": "{color.error.60}",         "type": "color" },
     "errordisabled":   { "value": "rgba(229, 83, 61, 0.2)",   "type": "color" },
     "success":         { "value": "{color.success.60}",       "type": "color" },
-    "successdisabled": { "value": "rgba(63, 185, 80, 0.2)",   "type": "color" }
+    "successdisabled": { "value": "rgba(63, 185, 80, 0.2)",   "type": "color" },
+    "blue":            { "value": "{color.blue.60}",          "type": "color" },
+    "purple":          { "value": "{color.purple.60}",        "type": "color" },
+    "warning":         { "value": "{color.warning.60}",       "type": "color" }
+  },
+  "tag": {
+    "gray":    { "surface": { "value": "rgba(60, 65, 73, 0.5)",     "type": "color" }, "border": { "value": "{color.neutral.70}", "type": "color" }, "text": { "value": "{color.neutral.40}",  "type": "color" } },
+    "blue":    { "surface": { "value": "rgba(74, 132, 197, 0.2)",   "type": "color" }, "border": { "value": "{color.blue.60}",    "type": "color" }, "text": { "value": "{color.blue.40}",    "type": "color" } },
+    "purple":  { "surface": { "value": "rgba(107, 95, 167, 0.2)",   "type": "color" }, "border": { "value": "{color.purple.60}",  "type": "color" }, "text": { "value": "{color.purple.40}",  "type": "color" } },
+    "red":     { "surface": { "value": "rgba(229, 83, 61, 0.2)",    "type": "color" }, "border": { "value": "{color.error.60}",   "type": "color" }, "text": { "value": "{color.error.40}",   "type": "color" } },
+    "green":   { "surface": { "value": "rgba(63, 185, 80, 0.2)",    "type": "color" }, "border": { "value": "{color.success.60}", "type": "color" }, "text": { "value": "{color.success.40}", "type": "color" } },
+    "yellow":  { "surface": { "value": "rgba(232, 154, 60, 0.2)",   "type": "color" }, "border": { "value": "{color.warning.60}", "type": "color" }, "text": { "value": "{color.warning.40}", "type": "color" } },
+    "brand":   { "surface": { "value": "rgba(245, 163, 54, 0.2)",   "type": "color" }, "border": { "value": "{color.brand.40}",   "type": "color" }, "text": { "value": "{color.brand.40}",   "type": "color" } },
+    "orange":  { "surface": { "value": "rgba(245, 163, 54, 0.2)",   "type": "color" }, "border": { "value": "{color.brand.60}",   "type": "color" }, "text": { "value": "{color.brand.40}",   "type": "color" } }
   },
   "transparent": { "value": "rgba(255, 255, 255, 0)", "type": "color" }
 }

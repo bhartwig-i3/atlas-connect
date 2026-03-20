@@ -1,0 +1,57 @@
+.atlas-segmented-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  background: var(--atlas-surface-secondary);
+  border-radius: 8px;
+}
+
+.atlas-segmented-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 16px;
+  border-radius: 6px;
+  font-family: var(--font-manrope), Manrope, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+  color: var(--atlas-text-secondary);
+  cursor: pointer;
+  transition: color 150ms ease;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.atlas-segmented-option--active {
+  background: var(--atlas-surface-brand);
+  color: var(--atlas-text-onbrand);
+}
+
+.atlas-segmented-option--disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.atlas-segmented-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  cursor: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.atlas-segmented-option:not(.atlas-segmented-option--active):hover {
+  color: var(--atlas-text-primary);
+}
+
+.atlas-segmented-input:focus-visible ~ * {
+  outline: 2px solid var(--atlas-border-brand);
+  outline-offset: 2px;
+}

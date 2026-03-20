@@ -1,0 +1,78 @@
+.atlas-input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.atlas-input-label {
+  font-family: var(--font-manrope), Manrope, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+  color: var(--atlas-text-secondary);
+}
+
+.atlas-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 12px;
+  background: var(--atlas-surface-primary);
+  border: 1px solid var(--atlas-border-primary);
+  border-radius: 8px;
+  transition: border-color 150ms ease;
+}
+
+.atlas-input-wrapper:focus-within {
+  border-color: var(--atlas-border-brand);
+  outline: none;
+}
+
+.atlas-input-wrapper--error {
+  border-color: var(--atlas-border-error);
+}
+
+.atlas-input-wrapper--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.atlas-input-prefix-icon {
+  display: flex;
+  align-items: center;
+  color: var(--atlas-text-secondary);
+  flex-shrink: 0;
+}
+
+.atlas-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-manrope), Manrope, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--atlas-text-primary);
+  width: 100%;
+}
+
+.atlas-input::placeholder {
+  color: var(--atlas-text-disabled);
+}
+
+.atlas-input:disabled {
+  cursor: not-allowed;
+}
+
+.atlas-input-hint {
+  font-family: var(--font-manrope), Manrope, sans-serif;
+  font-size: 12px;
+  color: var(--atlas-text-secondary);
+}
+
+.atlas-input-hint--error {
+  color: var(--atlas-text-error);
+}

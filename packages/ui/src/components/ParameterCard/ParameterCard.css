@@ -1,0 +1,82 @@
+.atlas-parameter-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background: var(--atlas-surface-primary);
+  border: 1px solid var(--atlas-border-primary);
+  border-radius: 12px;
+  min-width: 160px;
+}
+
+.atlas-parameter-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.atlas-parameter-card__label {
+  font-family: var(--font-manrope), Manrope, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+  color: var(--atlas-text-secondary);
+}
+
+.atlas-parameter-card__trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-family: var(--font-manrope), Manrope, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--atlas-text-secondary);
+}
+
+.atlas-parameter-card__trend--up {
+  color: var(--atlas-text-success);
+}
+
+.atlas-parameter-card__trend--down {
+  color: var(--atlas-text-error);
+}
+
+.atlas-parameter-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.atlas-parameter-card__value-group {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.atlas-parameter-card__value {
+  font-family: var(--font-manrope), Manrope, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--atlas-text-primary);
+}
+
+.atlas-parameter-card__unit {
+  font-family: var(--font-manrope), Manrope, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--atlas-text-secondary);
+}
+
+.atlas-parameter-card__graph {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.atlas-parameter-card--graph {
+  min-width: 220px;
+}

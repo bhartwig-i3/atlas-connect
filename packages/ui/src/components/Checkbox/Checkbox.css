@@ -1,0 +1,70 @@
+.atlas-checkbox-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.atlas-checkbox-wrapper--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.atlas-checkbox-control {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.atlas-checkbox-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  cursor: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.atlas-checkbox-box {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--atlas-border-primary);
+  border-radius: 4px;
+  background: var(--atlas-surface-primary);
+  transition: background 150ms ease, border-color 150ms ease;
+  color: transparent;
+  pointer-events: none;
+}
+
+.atlas-checkbox-wrapper--error .atlas-checkbox-box {
+  border-color: var(--atlas-border-error);
+}
+
+.atlas-checkbox-input:checked ~ .atlas-checkbox-box,
+.atlas-checkbox-input:indeterminate ~ .atlas-checkbox-box {
+  background: var(--atlas-surface-brand);
+  border-color: var(--atlas-surface-brand);
+  color: var(--atlas-text-onbrand);
+}
+
+.atlas-checkbox-input:focus-visible ~ .atlas-checkbox-box {
+  outline: 2px solid var(--atlas-border-brand);
+  outline-offset: 2px;
+}
+
+.atlas-checkbox-label {
+  font-family: var(--font-manrope), Manrope, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--atlas-text-primary);
+}
+
+.atlas-checkbox-wrapper--error .atlas-checkbox-label {
+  color: var(--atlas-text-error);
+}
