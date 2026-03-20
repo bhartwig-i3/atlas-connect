@@ -69,7 +69,7 @@
 
 .atlas-radio-label {
   font-family: var(--font-manrope), Manrope, sans-serif;
-  font-size: 14px;
+  font-size: var(--atlas-font-size-md);
   font-weight: 400;
   color: var(--atlas-text-primary);
 }

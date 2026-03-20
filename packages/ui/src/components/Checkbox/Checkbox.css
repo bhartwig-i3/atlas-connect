@@ -35,7 +35,7 @@
   align-items: center;
   justify-content: center;
   border: 1.5px solid var(--atlas-border-primary);
-  border-radius: 4px;
+  border-radius: var(--atlas-border-radius-sm);
   background: var(--atlas-surface-primary);
   transition: background 150ms ease, border-color 150ms ease;
   color: transparent;
@@ -60,7 +60,7 @@
 
 .atlas-checkbox-label {
   font-family: var(--font-manrope), Manrope, sans-serif;
-  font-size: 14px;
+  font-size: var(--atlas-font-size-md);
   font-weight: 400;
   color: var(--atlas-text-primary);
 }

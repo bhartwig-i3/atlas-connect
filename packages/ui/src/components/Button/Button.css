@@ -5,7 +5,7 @@
   gap: var(--atlas-spacing-2);
   border: 1px solid transparent;
   border-radius: var(--atlas-border-radius-md);
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-manrope), Manrope, sans-serif;
   font-weight: 600;
   font-size: var(--atlas-font-size-md);
   letter-spacing: 1.12px;

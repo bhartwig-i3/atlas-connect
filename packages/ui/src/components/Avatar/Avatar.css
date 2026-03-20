@@ -1,0 +1,30 @@
+.atlas-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--atlas-border-radius-full);
+  background: var(--atlas-surface-secondary);
+  border: 1.5px solid var(--atlas-border-primary);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.atlas-avatar__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.atlas-avatar__initials {
+  font-family: var(--font-manrope), Manrope, sans-serif;
+  font-weight: 700;
+  color: var(--atlas-text-primary);
+  user-select: none;
+}
+
+/* Size-specific font scaling */
+.atlas-avatar--xs .atlas-avatar__initials { font-size: 10px; }
+.atlas-avatar--sm .atlas-avatar__initials { font-size: var(--atlas-font-size-xs); }
+.atlas-avatar--md .atlas-avatar__initials { font-size: var(--atlas-font-size-sm); }
+.atlas-avatar--lg .atlas-avatar__initials { font-size: var(--atlas-font-size-md); }
+.atlas-avatar--xl .atlas-avatar__initials { font-size: var(--atlas-font-size-lg); }

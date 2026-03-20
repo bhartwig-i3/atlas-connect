@@ -1,0 +1,10 @@
+/* Make Next.js font CSS variables available in Storybook */
+:root {
+  --font-manrope: 'Manrope';
+  --font-anybody: 'Anybody';
+}
+
+/* Storybook canvas default background */
+.sb-show-main {
+  background: var(--atlas-background-primary);
+}

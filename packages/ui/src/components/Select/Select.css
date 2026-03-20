@@ -1,10 +1,10 @@
-.atlas-input-field {
+.atlas-select-field {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.atlas-input-label {
+.atlas-select-label {
   font-family: var(--font-manrope), Manrope, sans-serif;
   font-size: var(--atlas-font-size-sm);
   font-weight: 700;
@@ -14,65 +14,72 @@
   color: var(--atlas-text-secondary);
 }
 
-.atlas-input-wrapper {
+.atlas-select-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: var(--atlas-spacing-2);
   height: 40px;
-  padding: 0 var(--atlas-spacing-3);
   background: var(--atlas-surface-primary);
   border: 1px solid var(--atlas-border-primary);
   border-radius: var(--atlas-border-radius-md);
   transition: border-color 150ms ease;
 }
 
-.atlas-input-wrapper:focus-within {
+.atlas-select-wrapper:focus-within {
   border-color: var(--atlas-border-brand);
-  outline: none;
 }
 
-.atlas-input-wrapper--error {
+.atlas-select-wrapper--error {
   border-color: var(--atlas-border-error);
 }
 
-.atlas-input-wrapper--disabled {
+.atlas-select-wrapper--disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
-.atlas-input-prefix-icon {
-  display: flex;
-  align-items: center;
-  color: var(--atlas-text-secondary);
-  flex-shrink: 0;
-}
-
-.atlas-input {
+.atlas-select {
   flex: 1;
+  height: 100%;
+  padding: 0 var(--atlas-spacing-3);
+  padding-right: 36px;
   background: transparent;
   border: none;
   outline: none;
+  appearance: none;
   font-family: var(--font-manrope), Manrope, sans-serif;
   font-size: var(--atlas-font-size-md);
   font-weight: 400;
   color: var(--atlas-text-primary);
+  cursor: pointer;
   width: 100%;
 }
 
-.atlas-input::placeholder {
-  color: var(--atlas-text-disabled);
-}
-
-.atlas-input:disabled {
+.atlas-select:disabled {
   cursor: not-allowed;
 }
 
-.atlas-input-hint {
+/* Style native option elements - limited cross-browser, but best effort */
+.atlas-select option {
+  background: var(--atlas-surface-primary);
+  color: var(--atlas-text-primary);
+}
+
+.atlas-select-chevron {
+  position: absolute;
+  right: var(--atlas-spacing-3);
+  display: flex;
+  align-items: center;
+  color: var(--atlas-text-secondary);
+  pointer-events: none;
+}
+
+.atlas-select-hint {
   font-family: var(--font-manrope), Manrope, sans-serif;
   font-size: var(--atlas-font-size-sm);
   color: var(--atlas-text-secondary);
 }
 
-.atlas-input-hint--error {
+.atlas-select-hint--error {
   color: var(--atlas-text-error);
 }

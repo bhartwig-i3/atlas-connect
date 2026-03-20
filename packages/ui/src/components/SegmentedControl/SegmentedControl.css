@@ -4,7 +4,7 @@
   gap: 2px;
   padding: 3px;
   background: var(--atlas-surface-secondary);
-  border-radius: 8px;
+  border-radius: var(--atlas-border-radius-md);
 }
 
 .atlas-segmented-option {
@@ -13,10 +13,10 @@
   align-items: center;
   justify-content: center;
   height: 30px;
-  padding: 0 16px;
+  padding: 0 var(--atlas-spacing-4);
   border-radius: 6px;
   font-family: var(--font-manrope), Manrope, sans-serif;
-  font-size: 12px;
+  font-size: var(--atlas-font-size-sm);
   font-weight: 700;
   letter-spacing: 0.96px;
   text-transform: uppercase;

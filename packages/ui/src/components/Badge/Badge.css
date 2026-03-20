@@ -1,0 +1,59 @@
+.atlas-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-manrope), Manrope, sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  border-radius: var(--atlas-border-radius-full);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Dot variant */
+.atlas-badge--dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--atlas-border-radius-full);
+}
+
+/* Sizes */
+.atlas-badge--sm {
+  height: 16px;
+  min-width: 16px;
+  padding: 0 4px;
+  font-size: 10px;
+}
+
+.atlas-badge--md {
+  height: 20px;
+  min-width: 20px;
+  padding: 0 6px;
+  font-size: var(--atlas-font-size-xs);
+}
+
+/* Variants */
+.atlas-badge--brand {
+  background: var(--atlas-surface-brand);
+  color: var(--atlas-text-onbrand);
+}
+
+.atlas-badge--gray {
+  background: var(--atlas-surface-secondary);
+  color: var(--atlas-text-primary);
+}
+
+.atlas-badge--error {
+  background: var(--atlas-surface-error);
+  color: #fff;
+}
+
+.atlas-badge--success {
+  background: var(--atlas-surface-success);
+  color: #fff;
+}
+
+.atlas-badge--warning {
+  background: var(--atlas-surface-warning);
+  color: var(--atlas-text-onbrand);
+}

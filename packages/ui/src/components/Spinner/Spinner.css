@@ -1,0 +1,16 @@
+.atlas-spinner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  animation: atlas-spin 700ms linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes atlas-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.atlas-spinner--brand { color: var(--atlas-surface-brand); }
+.atlas-spinner--white { color: #ffffff; }
+.atlas-spinner--muted { color: var(--atlas-text-secondary); }
